@@ -1,0 +1,90 @@
+.prev {
+
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}	
+
+	&__content {
+		&_top {
+			color: $aqua;
+			line-height: 28px;
+			font-style: italic;
+			font-weight: 400;
+			max-width: 327px;
+
+			margin-bottom: 30px;
+		}
+
+		&_name {
+			font-size: 60px;
+			line-height: 71px;
+			color: $blue;
+			font-weight: 700;
+			font-style: italic;
+
+			margin-bottom: 30px;
+		}
+
+		&_title {
+			font-weight: 400;
+			font-size: 45px;
+			line-height: 58px;
+
+			margin-bottom: 30px;
+			max-width: 663px;
+
+			span {
+				text-transform: uppercase;
+			}
+		}
+
+		&_list {
+			margin-bottom: 30px;
+
+		}
+
+		&_item {
+			padding-left: 40px;
+			position: relative;
+			line-height: 30px;
+			margin-bottom: 15px;
+
+			&:before {
+				content: url('../img/check.svg');
+				top: 0;
+				left: 0;
+				position: absolute;	
+			}
+		}
+
+		&_btn {
+			margin-bottom: 100px;
+		}
+
+		
+	}
+
+	&__img {
+		margin-top: -50px;
+	}
+
+	&__bot {
+		font-style: italic;
+		font-size: 30px;
+		line-height: 35px;
+		position: relative;
+
+		&:after {
+			content: url('../img/done.svg');
+			top: 0;
+			right: 0;
+			position: absolute;
+		}
+		span {
+			text-transform: uppercase;
+		}
+	}
+}

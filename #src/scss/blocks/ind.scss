@@ -1,0 +1,71 @@
+.ind {
+	padding: 60px 0;
+	&__inner {
+
+	}
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__subtitle {
+		margin-bottom: 60px;
+		font-size: 35px;
+		line-height: 45px;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+
+		.btn {
+			padding: 18px 158px;
+		}
+	}
+
+	&__tabs {
+
+	}
+
+	&__tab {
+		margin-bottom: 20px;
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 30px;
+		font-style: italic;
+	}
+
+	&__tab.ind-active {
+		color: $blue;
+	}
+
+	&__body_wr {
+		max-width: 950px;
+
+	}
+
+	&__body {
+		gap: 30px;
+		display: flex;
+		margin-bottom: 50px;
+
+		&_item {
+
+			&_img {
+				margin-bottom: 20px;
+			}
+
+			&_text {
+				line-height: 28px;
+			}
+		}
+
+	}
+
+
+}

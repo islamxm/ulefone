@@ -1,0 +1,93 @@
+.why {
+	padding: 120px 0 60px;
+	&__inner {
+
+		width: 100%;
+	}
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__subtitle {
+		margin-bottom: 60px;
+
+		font-size: 35px;
+		line-height: 45px;
+		font-weight: 400;
+	}
+
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		margin-bottom: 60px;
+
+		&_item {
+			padding-top: 120px;
+			width: 48%;
+			position: relative;
+
+			&:after {
+				position: absolute;
+				top: 0;
+				left: -30px;
+			}
+
+			&_name {
+				font-size: 25px;
+				line-height: 30px;
+				font-weight: 500;
+				font-style: italic;
+				margin-bottom: 20px;
+			}
+
+			&_text {
+				line-height: 28px;
+			}
+
+			&:nth-child(1) {
+				&:after {
+					content: url('../img/why1.svg');
+				}
+			}
+			&:nth-child(2) {
+				&:after {
+					content: url('../img/why2.svg');
+				}
+			}
+			&:nth-child(3) {
+				&:after {
+					content: url('../img/why3.svg');
+				}
+			}
+			&:nth-child(4) {
+				&:after {
+					content: url('../img/why4.svg');
+				}
+			}
+			&:nth-child(5) {
+				&:after {
+					content: url('../img/why5.svg');
+				}
+			}
+			&:nth-child(6) {
+				&:after {
+					content: url('../img/why6.svg');
+				}
+			}
+		}
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+
+		.btn {
+			padding: 18px 75px;
+		}
+	}
+}
+

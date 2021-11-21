@@ -1,0 +1,42 @@
+/*Colors*/
+
+
+$blue: #00A7EB;
+$aqua: #98E1FF;
+$gray: #677C84;
+$black: #1D1D1D;
+
+
+/*Anim*/
+
+$anim: all .3s ease;
+
+
+@mixin btn {
+	display: inline-block;
+	padding: 18px 43px;
+	background-color: $blue;
+	color: #fff;
+	box-shadow: 4px 4px 26px #005476;
+	border-radius: 50px;
+
+
+	font-weight: 500;
+	transition: $anim;
+
+	&:hover {
+		box-shadow: none;
+		background-color: #fff;
+		color: $blue;
+	}
+
+}
+
+@mixin section-title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 47px;
+	font-style: italic;
+}
+
+

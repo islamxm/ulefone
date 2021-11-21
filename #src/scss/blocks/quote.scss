@@ -1,0 +1,45 @@
+.quote {
+	padding: 60px 0;
+	.container {
+		max-width: 1077px;
+	}
+	&__inner {
+
+	}
+
+	&__item {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		&_img {
+
+		}
+
+		&_descr {
+			width: 70%;
+			padding: 0 0 50px 96px;
+
+			&_text {
+				line-height: 28px;
+				font-style: italic;
+				position: relative;
+				padding-top: 125px;
+
+				&:after {
+					position: absolute;
+					content: url('../img/quote.svg');
+					top: 10px;
+					left: -30px;
+				}
+			}
+
+			&_aut {
+				font-size: 500px;
+				font-style: italic;
+				font-size: 22px;
+				line-height: 30px;
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+input, button {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 400;
+
+    background-color: $black;
+}
+
+//HELPERS
+
+.container {
+    max-width: 1481px;
+    padding: 0 20px;
+    margin: 0 auto; 
+    width: 100%;
+}
+
+.btn {
+
+    @include btn;
+}
+
+.section-title {
+
+    @include section-title;
+}
+
+
