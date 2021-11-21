@@ -54,8 +54,8 @@
 
 			&:before {
 				content: url('../img/check.svg');
-				top: 0;
-				left: 0;
+				top: -10px;
+				left: -10px;
 				position: absolute;	
 			}
 		}
@@ -76,9 +76,10 @@
 		font-size: 30px;
 		line-height: 35px;
 		position: relative;
+		max-width: 450px;
 
 		&:after {
-			content: url('../img/done.svg');
+			content: url('../img/downn.svg');
 			top: 0;
 			right: 0;
 			position: absolute;

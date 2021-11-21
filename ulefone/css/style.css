@@ -100,6 +100,9 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+.header__nav_list li:not(:last-child) {
+  margin-right: 35px;
+}
 .header__nav_item {
   display: block;
   -webkit-transition: all 0.3s ease;
@@ -108,9 +111,6 @@ body {
 }
 .header__nav_item:hover {
   color: #00A7EB;
-}
-.header__nav_item:not(last-child) {
-  margin-right: 35px;
 }
 .header__btn {
   display: inline-block;
@@ -138,7 +138,64 @@ body {
   line-height: 19px;
   font-style: normal;
 }
-
+.header .burger__btn {
+  width: 41px;
+  position: relative;
+  height: 31px;
+  display: none;
+}
+.header .burger__btn div {
+  background-color: #fff;
+  position: absolute;
+  height: 3px;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header .burger__btn div:nth-child(1) {
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+.header .burger__btn div:nth-child(2) {
+  width: 75%;
+  top: calc(50% - 1.5px);
+  right: 0;
+}
+.header .burger__btn div:nth-child(3) {
+  width: 50%;
+  bottom: 0;
+  right: 0;
+}
+.header .mob__menu {
+  display: none;
+}
+@media (max-width: 1380px) {
+  .header__logo {
+    margin-right: 5px;
+  }
+  .header__nav_list li:not(:last-child) {
+    margin-right: 15px;
+  }
+  .header__btn {
+    padding: 12px 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .header__logo {
+    margin-right: 0;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__btn {
+    padding: 7px 42px;
+  }
+  .header .burger__btn {
+    display: block;
+  }
+}
 .prev__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,8 +244,8 @@ body {
 }
 .prev__content_item:before {
   content: url("../img/check.svg");
-  top: 0;
-  left: 0;
+  top: -10px;
+  left: -10px;
   position: absolute;
 }
 .prev__content_btn {
@@ -202,9 +259,10 @@ body {
   font-size: 30px;
   line-height: 35px;
   position: relative;
+  max-width: 450px;
 }
 .prev__bot:after {
-  content: url("../img/done.svg");
+  content: url("../img/downn.svg");
   top: 0;
   right: 0;
   position: absolute;
@@ -413,6 +471,7 @@ body {
   font-size: 25px;
   line-height: 30px;
   font-style: italic;
+  cursor: pointer;
 }
 .ind__tab.ind-active {
   color: #00A7EB;
@@ -434,6 +493,11 @@ body {
   line-height: 28px;
 }
 
+@media (max-width: 1380px) {
+  .ind__body_wr {
+    max-width: 750px;
+  }
+}
 .quote {
   padding: 60px 0;
 }

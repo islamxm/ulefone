@@ -38,6 +38,7 @@
 		font-size: 25px;
 		line-height: 30px;
 		font-style: italic;
+		cursor: pointer;
 	}
 
 	&__tab.ind-active {
@@ -68,4 +69,16 @@
 	}
 
 
+}
+
+
+@media (max-width: 1380px) {
+
+	.ind {
+
+
+		&__body_wr {
+			max-width: 750px;
+		}
+	}
 }

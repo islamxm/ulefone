@@ -16,9 +16,16 @@
 	}
 
 	&__nav {
-
+		// display: none;
 		&_list {
 			display: flex;
+
+			li {
+
+				&:not(:last-child) {
+					margin-right: 35px;
+				} 
+			}
 		}
 
 		&_item {
@@ -28,9 +35,7 @@
 				color: $blue;
 			}
 
-			&:not(last-child) {
-				margin-right: 35px;
-			}
+			
 		}
 	}
 
@@ -62,6 +67,129 @@
 			line-height: 19px;
 			font-style: normal;
 
+		}
+	}
+
+	.burger__btn {
+		width: 41px;
+		position: relative;
+		height: 31px;
+		display: none;
+
+		div {
+			
+			background-color: #fff;
+			position: absolute;
+			height: 3px;
+			border-radius: 50px;
+			transition: $anim;
+
+			&:nth-child(1) {
+				width: 100%;
+				top: 0;
+				right: 0;
+			}
+
+			&:nth-child(2) {
+				width: 75%;
+				top: calc(50% - 1.5px);
+				right: 0;
+			}
+
+			&:nth-child(3) {
+				width: 50%;
+				bottom: 0;
+				right: 0;
+			}
+
+		}
+	}
+
+	.mob__menu {
+		display: none;
+
+		&_in {
+
+		}
+
+		&_logo {
+
+		}
+
+		&_list {
+
+
+			li {
+				
+			}
+		}
+
+		&_item {
+
+		}
+	}
+}
+
+
+@media (max-width: 1380px) {
+
+	.header {
+
+
+		&__inner {
+
+		}	
+
+		&__logo {
+			margin-right: 5px;
+		}
+
+		&__nav {
+
+
+			&_list {
+				li:not(:last-child) {
+					margin-right: 15px;
+				}
+			}
+
+			&_item {
+
+
+			}
+		}
+
+		&__btn {
+			padding: 12px 15px;
+		}
+	}
+}
+
+
+@media (max-width: 1200px) {
+	.header {
+
+		&__inner {
+
+		}
+
+		&__logo {
+			margin-right: 0;
+		}
+		&__nav {
+			display: none;
+		}
+
+		&__btn {
+			padding: 7px 42px;
+		}
+
+		.mob__menu {
+			// display: block;
+		}
+
+		.burger__btn {
+			display: block;
 		}
 	}
 }
