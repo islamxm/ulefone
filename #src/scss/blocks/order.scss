@@ -1,0 +1,64 @@
+.order {
+	padding: 60px 0;
+	.container {
+
+	}
+
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__img {
+		margin-top: -80px;
+	}
+
+	&__content {
+		max-width: 492px;
+
+		&_title {
+			font-size: 35px;
+			line-height: 45px;
+			font-weight: 400;
+
+			margin-bottom: 40px;
+			
+
+			span {
+				font-weight: 700;
+				font-style: italic;
+			}
+		}
+
+		&_form {
+
+
+			input {
+				max-width: 364px;
+				width: 100%;
+				padding: 20px 17px;
+				background-color: #fff;
+				border-radius: 50px;
+				margin-bottom: 30px;
+				font-size: 18px;
+				line-height: 21px;
+
+				&:placeholder {
+					color: $gray;
+				}
+			}
+
+			.btn {
+				font-size: 16px;
+				line-height: 18px;
+				text-transform: uppercase;
+				max-width: 364px;
+				width: 100%;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+		}
+	}
+}
+
