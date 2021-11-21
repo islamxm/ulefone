@@ -1,10 +1,12 @@
 .header {
 	padding: 40px 0;
+
 	&__inner {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-
+		position: relative;
+		z-index: 100000000;
 	}
 
 	&__logo {
@@ -105,6 +107,33 @@
 		}
 	}
 
+	.burger__btn.btn-open {
+
+		div {
+			&:nth-child(1) {
+				width: 100%;
+				top: calc(50% - 1.5px);
+				right: 0;
+				transform: rotate(45deg);
+			}
+
+			&:nth-child(2) {
+				width: 75%;
+				top: calc(50% - 1.5px);
+				right: 0;
+				transform: translateX(-25px);
+				opacity: 0;
+			}
+
+			&:nth-child(3) {
+				width: 100%;
+				bottom: calc(50% - 1.5px);
+				right: 0;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
 	.mob__menu {
 		display: none;
 
@@ -127,6 +156,10 @@
 		&_item {
 
 		}
+	}
+
+	.mob__menu.menu-open {
+		transform: translateY(100%);
 	}
 }
 
@@ -168,7 +201,12 @@
 
 @media (max-width: 1200px) {
 	.header {
-		position: relative;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: $black;
+		z-index: 1000000;
 		&__inner {
 
 		}
@@ -191,32 +229,50 @@
 		}
 
 		.mob__menu {
+			padding-top: 20px;
 			// display: block;
-			display: block;
+			display: flex;
+			justify-content: center;
 			transition: $anim;
-			position: absolute;
+			position: fixed;
 			right: 0;
-			top: 0;
+			top: 83px;
 			width: 100%;
+			height: 50vh;
 			transform: translateX(100%);
+			transition: all .3s ease;
+			background-color: $black; 
+			z-index: 1000000;
 			&_in {
+				padding: 34px 60px;
 
 			}
 
 			&_logo {
+				display: none;
+				max-width: 220px;
+				max-height: 38px;
+				img {
 
+				}
 			}
 
 			&_list {
 
 			}
 			&_item {
-
+				text-align: center;
+				margin-bottom: 20px;
+				display: block;
 			}
 		}
 
 		.burger__btn {
 			display: block;
+		}
+
+		.mob__menu.menu-open {
+			transform: translateX(0);
 		}
 	}
 }
@@ -235,6 +291,39 @@
 
 		&__btn {
 			padding: 5px 21px;
+		}
+
+		.mob__menu {
+
+			&_logo {
+				display: block;
+				margin-bottom: 20px;
+			}
+
+			&_in {
+				padding-right: 90px;
+				padding-left: 40px;
+			}
+
+			&_item {
+				text-align: left;
+				font-size: 18px;
+				line-height: 21px;
+			}
+		}
+	}
+}
+
+@media (max-width: 375px) {
+
+	.header {
+
+		.mob__menu {
+
+
+			&_in {
+				padding-right: 50px;
+			}
 		}
 	}
 }

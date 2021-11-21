@@ -1,6 +1,6 @@
 .prev {
 
-
+	padding-top: 30px;
 	&__inner {
 		display: flex;
 		justify-content: space-between;
@@ -93,7 +93,7 @@
 
 @media (max-width: 1200px) {
 	.prev {
-		padding-top: 20px;
+		padding-top: 150px;
 		&__inner {
 			align-items: flex-start;
 		}
@@ -160,7 +160,7 @@
 
 @media (max-width: 600px) {
 	.prev {
-		padding-top: 0;
+		padding-top: 70px;
 
 		&__inner {
 			flex-wrap: wrap;

@@ -72,9 +72,48 @@ main {
 
 @media (max-width: 475px) {
     .section-title {
-        // font-size: 19px;
-        // line-height: 22.5px;
+        font-size: 19px;
+        line-height: 22.5px;
     }
 }
+
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none !important;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+}
+
+@keyframes fade {
+    from {
+        transform: translateY(-100px) scale(0.5);
+        opacity: 0.1;
+
+    }
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+// .mob__menu {
+//     position: absolute;
+//     display: none;
+// }
+
+// @media (max-width: 768px) {
+
+//     .mob__menu {
+//         display: block;
+//     }
+// }
 
 
