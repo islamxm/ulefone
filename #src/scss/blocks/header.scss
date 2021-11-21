@@ -168,7 +168,7 @@
 
 @media (max-width: 1200px) {
 	.header {
-
+		position: relative;
 		&__inner {
 
 		}
@@ -182,14 +182,59 @@
 
 		&__btn {
 			padding: 7px 42px;
+			font-size: 14px;
+			line-height: 16.5px;
+			span {
+				font-size: 14px;
+				line-height: 16.5px;
+			}
 		}
 
 		.mob__menu {
 			// display: block;
+			display: block;
+			transition: $anim;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100%;
+			transform: translateX(100%);
+			&_in {
+
+			}
+
+			&_logo {
+
+			}
+
+			&_list {
+
+			}
+			&_item {
+
+			}
 		}
 
 		.burger__btn {
 			display: block;
+		}
+	}
+}
+
+
+@media (max-width: 600px) {
+	.header {
+		padding: 0;
+		&__inner {
+			padding: 20px 0;
+		}
+
+		&__logo {
+			display: none;
+		}
+
+		&__btn {
+			padding: 5px 21px;
 		}
 	}
 }
