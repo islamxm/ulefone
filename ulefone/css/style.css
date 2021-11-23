@@ -965,10 +965,16 @@ main {
   .ind__body_wr {
     max-width: 750px;
   }
+  .ind__body_item_img {
+    max-height: 219px;
+  }
 }
 @media (max-width: 1200px) {
   .ind__body_wr {
     max-width: 600px;
+  }
+  .ind__body_item_img {
+    max-height: 173.5px;
   }
 }
 @media (max-width: 1050px) {
@@ -1013,6 +1019,9 @@ main {
   .ind__body_item_descr {
     font-size: 18px;
     line-height: 25px;
+  }
+  .ind__body_item_img {
+    max-height: 165px;
   }
   .ind__subtitle {
     font-size: 25px;

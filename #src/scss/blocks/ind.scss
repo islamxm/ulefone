@@ -82,6 +82,16 @@
 		&__body_wr {
 			max-width: 750px;
 		}
+
+		&__body {
+
+			&_item {
+
+				&_img {
+					max-height: 219px;
+				}
+			}
+		}
 	}
 }
 
@@ -91,6 +101,16 @@
 
 		&__body_wr {
 			max-width: 600px;
+		}
+
+		&__body {
+
+			&_item {
+
+				&_img {
+					max-height: 173.5px;
+				}
+			}
 		}
 	}
 }
@@ -160,6 +180,10 @@
 					font-size: 18px;	
 					line-height: 25px;	
 				}
+
+				&_img {
+					max-height: 165px;
+				}
 			}
 		}
 
@@ -185,6 +209,10 @@
 
 			&_item {
 				width: 100%;
+			}
+
+			&_img {
+				
 			}
 		}
 	}
