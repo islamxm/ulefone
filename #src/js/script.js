@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+	window.addEventListener('scroll', {
+		behavior: 'smooth'
+	})
 	
 	const indicatorCont = document.querySelector('#ind'),
 		  tabs = document.querySelectorAll('.ind__tab'),

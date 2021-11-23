@@ -59,6 +59,8 @@
 			width: 100%;
 			&_img {
 				margin-bottom: 20px;
+				overflow: hidden;
+				border-radius: 10px;max-height: 280px;
 			}
 
 			&_text {

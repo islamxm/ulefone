@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -949,6 +953,9 @@ main {
 }
 .ind__body_item_img {
   margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  max-height: 280px;
 }
 .ind__body_item_text {
   line-height: 28px;
